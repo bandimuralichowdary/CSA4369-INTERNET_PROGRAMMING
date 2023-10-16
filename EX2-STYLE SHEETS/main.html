@@ -1,0 +1,23 @@
+<!--AIM:
+To create a web page that displays college information using various style sheet
+PROCEDURE:
+1. Create a web page with frame sets consisting two frames
+2. In the first frame include the links
+3. In the second frame set display the web page of the link
+4. Create a external style sheets
+5. Create a embedded style sheets
+6. Create a inline and internal style sheets and make it link to the external style sheets-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Sheets Ex-2</title>
+    <link rel="stylesheet" href="abc.css" type="text/css">
+</head>
+<frameset rows="40%,60%">
+    <frame src="links.html" name="row" scrolling="no">
+    <frame src="result.html" name="bottom" class='bottom' scrolling="no">
+</frameset>
+</html>
