@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER PAGE</title>
+    <style>
+        body{
+            background-color: rgb(100, 255, 255);
+            color:rgb(0, 13, 29);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>WELCOME TO REGISTER PAGE!!</h1><br/><br/><br/>
+        <script>
+            function rvalidate(){
+                var flag=1;
+                if(document.myform.id.value==""||document.myform.pwd.value==""||document.myform.add.value==""||document.myform.cno.value==""||document.myform.lid.value==""){
+                    alert("USERNAME or PASSWORD SHOULD'NT BE EMPTY!!")
+                    flag=0;
+                }
+                if(flag==1){
+                    alert("VALID INPUT!!")
+                    window.open("loginpage.html");
+                }
+                else{
+                    alert("INVALID INPUT!!")
+                }
+            }
+        </script>
+        <form name="myform">
+            <div>
+                <b>USERNAME:&nbsp;&nbsp;<input type="text" value="" name="id"></b><br/><br/><br/>
+                <b>ADDRESS:&nbsp;&nbsp;<input type="text" value="" name="add"></b><br/><br/><br/>
+                <b>CONTACT NO:&nbsp;&nbsp;<input type="number" value="" name="cno"></b><br/><br/><br/>
+                <b>LOGIN ID:&nbsp;&nbsp;<input type="text" value="" name="lid"></b><br/><br/><br/>
+                <b>PASSWORD:&nbsp;&nbsp;<input type="password" value="" name="pwd"></b><br/><br/><br/>
+                <input type="button" value="REGISTER" onClick="rvalidate()">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="RESET">
+            </div>
+        </form>
+    </center>
+</body>
+</html>

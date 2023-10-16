@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER CONFIRMATION</title>
+    <style>
+        body{
+            background-color: rgb(200, 155, 237);
+            color:rgb(0, 13, 29);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>ORDER CONFIRMATION PAGE</h1><br/>
+        <script>
+            function ovalidate(){
+                var id=document.getElementById('id');
+                var bno=document.getElementById('bno');
+                var flag=1;
+                if(document.myform.id.value==""||document.myform.pwd.value==""){
+                    alert("USERNAME or PASSWORD SHOULD'NT BE EMPTY!!")
+                    flag=0;
+                }
+                if(flag==1){
+                    alert("Congrats, ' "+id.value+" ' order placed successfully!!\nYou order of ' "+bno.value+" ' books has placed successfully.")
+                }
+                else{
+                    alert("INVALID INPUT!!")
+                }
+            }
+        </script>
+        <form name="myform">
+            <div>
+                <b>USERNAME:&nbsp;&nbsp;<input type="text" value="" name="id" id="id"></b><br/><br/><br/>
+                <b>PASSWORD:&nbsp;&nbsp;<input type="password" value="" name="pwd"></b><br/><br/><br/>
+                <b>AMOUNT PAYED:&nbsp;&nbsp;<input type="text" value="" name="amo" id="amo"></b><br/><br/><br/>
+                <b>NO OF BOOKS:&nbsp;&nbsp;<input type="number" value="" name="bno" id="bno"></b><br/><br/><br/>
+                <input type="button" value="PLACE ORDER" onClick="ovalidate()">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="RESET">
+            </div>
+        </form>
+    </center>
+</body>
+</html>

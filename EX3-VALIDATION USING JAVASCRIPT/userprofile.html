@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER PROFILE</title>
+    <style>
+        body{
+            background-color: rgb(200, 155, 237);
+            color:rgb(0, 13, 29);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>USER PROFILE</h1><br/>
+        <img src="user.png" width="80" height="80"><br/>
+        <script>
+            function uvalidate(){
+                var id=document.getElementById('id');
+                if(document.myform.id.value==""||document.myform.pwd.value==""){
+                    alert("Enter a valid USERNAME and PASSWORD")
+                }
+                else{
+                    alert("Welcome Mr."+id.value+" to our Website!!");
+                }
+            }
+        </script>
+        <form name="myform">
+            <b>USERNAME:&nbsp;&nbsp;<input type="text" value="" id="id"></b><br/><br/>
+            <b>PASSWORD:&nbsp;&nbsp;<input type="password" value="" name="pwd"></b><br/><br/>
+            <input type="button" value="SUBMIT" onClick="uvalidate()">
+        </form>
+    </center>
+</body>
+</html>

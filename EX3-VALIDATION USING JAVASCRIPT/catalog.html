@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(200, 255, 255);
+            color:rgb(0, 13, 29);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <script>
+            function bookopen(){
+                var book=document.getElementById('book'); 
+                if(document.myform.book.value==""){
+                    alert("BOOKNAME cannot be EMPTY!!")
+                }
+                else{
+                    alert("' "+book.value+" ' BOOK OPENED SUCCESSFULLY!!")
+                }
+            }
+        </script>
+        <h1>SEARCH FOR BOOKS!!</h1><br/><br/>
+        <form name="myform">
+            <b>BOOK NAME:&nbsp;&nbsp;</b><input type="text" value="" id="book"><br/><br/>
+            <input type="button" value="SEARCH" onclick="bookopen()">
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT PAGE</title>
+    <style>
+        body{
+            background-color: rgb(100, 255, 255);
+            color:rgb(0, 13, 29);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>WELCOME TO PAYMENTS PAGE!!</h1><br/><br/><br/>
+        <script>
+            function pvalidate(){
+                var amo=document.getElementById('amo');
+                var flag=1;
+                if(document.myform.id.value==""||document.myform.pwd.value==""){
+                    alert("USERNAME or PASSWORD SHOULD'NT BE EMPTY!!")
+                    flag=0;
+                }
+                if(flag==1){
+                    alert("You have paid "+amo.value+" rupees!!")
+                    window.open("catalog.html");
+                }
+                else{
+                    alert("INVALID INPUT!!")
+                }
+            }
+        </script>
+        <form name="myform">
+            <div>
+                <b>USERNAME:&nbsp;&nbsp;<input type="text" value="" name="id" id="id"></b><br/><br/><br/>
+                <b>PASSWORD:&nbsp;&nbsp;<input type="password" value="" name="pwd"></b><br/><br/><br/>
+                <b>AMOUNT PAYED:&nbsp;&nbsp;<input type="text" value="" name="amo" id="amo"></b><br/><br/><br/>
+                <input type="button" value="LOGIN" onClick="pvalidate()">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="RESET">
+            </div>
+        </form>
+    </center>
+</body>
+</html>
