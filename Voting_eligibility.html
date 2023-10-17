@@ -1,0 +1,47 @@
+<!-- A web application that takes name and age from an HTML page. 
+If the age is less than 18, it should send a page with “Hello <name>, 
+you are not eligible to vote” message, where <name> should be replaced withthe entered name. 
+Otherwise it should send “Welcome <name> to online voting system” message. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Eligibility</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        input[type="button"] {
+            background-color: #000;
+            color: #fff;
+            border:rgb(from #ffffff);
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>VOTING ELIGIBILITY!!</h1>
+    <form name="myform">
+        <b>Enter Name: <input type="text" value="" id="name"></b><br/><br/>
+        <b>Enter Age: <input type="text" value="" id="age"></b><br/><br/>
+        <input type="button" onClick="validate()" name="button" value="SUBMIT">
+    </form>
+    <script>
+        function validate(){
+            var name=document.getElementById('name');
+            var age=document.getElementById('age');
+            if(document.myform.age.value==""){
+                alert("AGE cannot be EMPTY!!")
+            }
+            else if(age.value<18&&age.value>0){
+                alert("HELLO "+name.value+",You are NOT ELIGIBLE to vote!!")
+            }
+            else if(age.value>18){
+                alert("WELCOME "+name.value+" to online voting system!!")
+            }
+        }
+    </script>
+    </center>
+</body>
+</html>
