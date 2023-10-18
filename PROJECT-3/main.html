@@ -1,0 +1,67 @@
+<!-- PROJECT-3 MAIN-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE ELECTRICITY BILL PAYMENT</title>
+    <style>
+        body {
+            text-align: center;
+            background-image: url(power.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+        }
+        marquee {
+            color: rgb(249, 247, 255);
+            text-shadow: black 1px 1px 2px;
+        }
+        h1 {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: rgb(236, 249, 255);
+            text-shadow: rgb(0, 0, 0) 2px 1px 2px;
+            background-color: rgba(248, 241, 255, 0.255);
+            padding: 20px;
+            display: inline-block;
+            letter-spacing: 0.07em;
+            border-radius: 35px;
+        }
+        .container {
+            display: inline-block;
+        }
+        .container form {
+            display: inline-block;
+        }
+        .container form input[type="submit"] {
+            background-color: rgb(92, 88, 206);
+            font-weight: bold;
+            text-shadow: black 0.7px 0.7px 0.2px;
+            color: aliceblue;
+            width: 125px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            margin-right: 30px;
+            transition: background-color 0.3s ease;
+        }
+        .container form input[type="submit"]:hover {
+            background-color: rgb(50, 47, 157);
+        }
+    </style>
+</head>
+<body>
+    <marquee><h2>Welcome to online electricity bill page!!</h2></marquee>
+    <a href="electricity_bill.html"><h1>ONLINE&nbsp;&nbsp;ELECTRICITY&nbsp;&nbsp;BILL&nbsp;&nbsp;PAYMENT</h1></a><br/>
+    <div class="container">
+        <form action="admin.html">
+            <input type="submit" value="ADMIN">
+        </form>
+        <form action="customer.html">
+            <input type="submit" value="CUSTOMER">
+        </form>
+    </div>
+</body>
+</html>
