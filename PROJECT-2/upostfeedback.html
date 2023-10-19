@@ -1,0 +1,66 @@
+<!-- PROJECT-2 MAIN submain-2 page-13-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    text-align: center;
+    background-color: rgb(175, 255, 232);
+}
+div.postFeedback {
+    width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+div.postFeedback h1 {
+    margin-bottom: 20px;
+}
+div.postFeedback label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+div.postFeedback textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+div.postFeedback button[type="button"] {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+div.postFeedback button[type="button"]:hover {
+    background-color: rgb(18, 1, 35);
+}
+    </style>
+</head>
+<body>
+    <!-- Post Feedback Page -->
+<div class="postFeedback">
+    <h1>Post Feedback</h1>
+    <form name="myform">
+      <label for="feedbackText">Your Feedback:</label>
+      <textarea id="feedbackText" name="feedbackText" rows="5" cols="50" required></textarea>
+      <button type="button" onClick="feedback()">SUBMIT FEEDBACK</button>
+    </form>
+</div>
+  <script>
+    function feedback(){
+        alert("Feedback Submitted Successfully!")
+        window.open("user.html")
+    }
+  </script>
+</body>
+</html>

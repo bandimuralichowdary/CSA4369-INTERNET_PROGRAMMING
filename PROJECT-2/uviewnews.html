@@ -1,0 +1,49 @@
+<!-- PROJECT-2 MAIN submain-2 page-9-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    text-align: center;
+    background-color: rgb(175, 255, 232);
+    padding: 20px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: rgb(18, 1, 35);
+}
+
+    </style>
+</head>
+<body>
+    <!-- View News Page -->
+    <div class="viewNews">
+        <h1>View News</h1>
+        <button onclick="redirectToLink1('https://www.myfurries.com/blog/top-10-breakthroughs-in-veterinary-medicine-2023')">NEW BREAKTHROUGHS</button>
+        <br/><br/><button onclick="redirectToLink2('tips.html')">TIPS FOR KEEPING PETS HEALTHY</button>
+    </div>
+    <br/>
+    <a href="user.html"><b>GO BACK</b></a>
+    <script>
+        function redirectToLink1(link) {
+            window.location.href = link;
+        }
+        function redirectToLink2(link) {
+            window.location.href = link;
+        }
+    </script>
+</body>
+</html>

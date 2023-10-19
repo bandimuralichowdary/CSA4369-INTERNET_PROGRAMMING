@@ -1,0 +1,106 @@
+<!-- PROJECT-2 MAIN submain-2 page-15-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY ACCOUNT</title>
+    <style>
+    body {
+    text-align: center;
+    background-color: rgb(175, 255, 232);
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 36px;
+    color: #333333;
+}
+
+.container {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #000000;
+}
+
+.container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container input[type="submit"] {
+    background-color: black;
+    color: whitesmoke;
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+    background-color: rgb(18, 1, 35);
+}
+
+.output {
+    text-align: left;
+    margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+    <h1>My Profile</h1>
+    <img src="user.png" width="80"  height="80">
+    <div class="container">
+        <h1>Enter Your Information</h1>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="text">Mobile No:</label>
+            <input type="text" id="phoneno" name="phoneno"><br><br>
+            <label for="text">Email ID:</label>
+            <input type="text" id="email" name="email"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <div class="output" id="output">
+            <!-- Displayed content will appear here -->
+        </div>
+    </div>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const mobileno = document.getElementById('phoneno').value;
+            const email = document.getElementById('email').value;
+            const outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = `<h2>Your Information:</h2>
+            <p>Name: ${name}</p>
+            <p>Mobile No: ${mobileno}</p>
+            <p>Email: ${email}</p>`;
+        });
+    </script>
+</body>
+</html>
