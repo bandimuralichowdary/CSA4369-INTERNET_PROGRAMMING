@@ -1,0 +1,95 @@
+<!-- PROJECT-2 MAIN submain-1 page-8 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View User Details</title>
+    <style>
+        body {
+    text-align: center;
+    background-color: rgb(177, 250, 164);
+}
+.viewpatient {
+    width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.viewpatient h1 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+.viewpatient h3 {
+    margin-bottom: 10px;
+    color: #757272;
+}
+.viewpatient b {
+    color: #000000;
+}
+.viewpatient button {
+    background-color: #000204;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.viewpatient button:hover {
+    background-color: rgb(18, 1, 35);
+}
+a {
+            text-decoration: none;
+}
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- View User Page -->
+    <div class="viewpatient">
+        <h1>View Patient Details</h1>
+        <h3>Select Patient Name to get Details</h3><br/>
+        <b>PATIENT NAME: </b>Mr.John<br/>
+        <button type="button" onClick="doc1()">SELECT</button><br/>
+        <b>PATIENT NAME: </b>Mr.Miachel<br/>
+        <button type="button" onClick="doc2()">SELECT</button><br/>
+        <b>PATIENT NAME: </b>Mr.Murthy<br/>
+        <button type="button" onClick="doc3()">SELECT</button><br/>
+        <b>PATIENT NAME: </b>Mr.Rehman<br/>
+        <button type="button" onClick="doc4()">SELECT</button><br/>
+        <a href="doctor.html"><b>GO BACK</b></a>
+    </div>
+    <div id="outputDiv"></div>
+    <script>
+        function doc1() {
+            document.getElementById('outputDiv').innerHTML = `<h2>Patient Information:</h2>
+                <p>Name: Mr.John</p>
+                <p>E-mail: john@gmail.com</p>
+                <p>Diagnosis For: Heart Disease</p>`;
+        }
+        function doc2() {
+            document.getElementById('outputDiv').innerHTML = `<h2>Patient Information:</h2>
+                <p>Name: Mr.Miachel</p>
+                <p>E-mail: miachel@gmail.com</p>
+                <p>Diagnosis For: Legs Surgery</p>`;
+        }
+        function doc3() {
+            document.getElementById('outputDiv').innerHTML = `<h2>Patient Information:</h2>
+                <p>Name: Mr.Murthy</p>
+                <p>E-mail: murthy@gmail.com</p>
+                <p>Diagnosis For: Eye Sight</p>`;
+        }
+        function doc4() {
+            document.getElementById('outputDiv').innerHTML = `<h2>Patient Information:</h2>
+                <p>Name: Mr.Rehman</p>
+                <p>E-mail: rehman@gmail.com</p>
+                <p>Diagnosis For: Diabeties</p>`;
+        }
+    </script>
+</body>
+</html>

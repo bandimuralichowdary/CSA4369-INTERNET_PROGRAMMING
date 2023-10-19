@@ -1,0 +1,66 @@
+<!-- PROJECT-2 MAIN submain-1 page-7-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Manage News</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(177, 250, 164);
+            padding: 20px;
+        }
+        button {
+            background-color: black;
+            color: white;
+            padding: 15px 30px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 2px;
+            margin: 25px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: rgb(18, 1, 35);
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Doctor Manage News Page -->
+    <div class="viewNews">
+        <h1>Manage News</h1>
+        <button onclick="redirectToLink1('https://www.myfurries.com/blog/top-10-breakthroughs-in-veterinary-medicine-2023')">NEW BREAKTHROUGHS</button>
+        <form id="tipsForm">
+            <h2>ADD TIPS</h2>
+            <textarea id="tipsText" rows="4" cols="50" placeholder="Enter tips here"></textarea>
+            <br>
+            <button type="button" onclick="displayTips()">DISPLAY TIPS</button>
+        </form>
+        <div id="tipsDisplay"></div>
+    </div>
+    <br/>
+    <a href="user.html"><b>GO BACK</b></a>
+    <script>
+        function redirectToLink1(link) {
+            window.location.href = link;
+        }
+        function displayTips() {
+            const tipsText = document.getElementById("tipsText").value;
+            const tipsDisplay = document.getElementById("tipsDisplay");
+            if (tipsText) {
+                tipsDisplay.innerHTML = "<h2>TIPS FOR KEEPING PETS HEALTHY</h2><p>" + tipsText + "</p>";
+            } else {
+                tipsDisplay.innerHTML = "";
+            }
+        }
+    </script>
+</body>
+</html>

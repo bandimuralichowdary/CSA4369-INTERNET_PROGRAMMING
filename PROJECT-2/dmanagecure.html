@@ -1,0 +1,97 @@
+<!-- PROJECT-2 MAIN submain-1 page-6-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Manage Cure</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(177, 250, 164);
+        }
+        div.doctorManageCure {
+            width: 450px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        div.doctorManageCure h2 {
+            margin-bottom: 20px;
+        }
+        div.doctorManageCure ul {
+            padding: 0;
+            list-style: none;
+        }
+        div.doctorManageCure li {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        div.doctorManageCure li input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        div.doctorManageCure button[type="button"] {
+            background-color: black;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        div.doctorManageCure button[type="button"]:hover {
+            background-color: rgb(18, 1, 35);
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Doctor Manage Cure Page -->
+    <div class="doctorManageCure">
+        <h1>Doctor Manage Cure</h1>
+        <ul>
+            <li>
+                <h3>Problem Number 01</h3>
+                <label for="cure01"><b>Cure:</b></label>
+                <input type="text" id="cure01" name="cure01" placeholder="Enter cure details">
+                <button type="button" onclick="updateCure('cure01')">Update Cure</button>
+            </li>
+            <li>
+                <h3>Problem Number 02</h3>
+                <label for="cure02"><b>Cure:</b></label>
+                <input type="text" id="cure02" name="cure02" placeholder="Enter cure details">
+                <button type="button" onclick="updateCure('cure02')">Update Cure</button>
+            </li>
+            <li>
+                <h3>Problem Number 03</h3>
+                <label for="cure01"><b>Cure:</b></label>
+                <input type="text" id="cure03" name="cure03" placeholder="Enter cure details">
+                <button type="button" onclick="updateCure('cure03')">Update Cure</button>
+            </li>
+            <li>
+                <h3>Problem Number 04</h3>
+                <label for="cure02"><b>Cure:</b></label>
+                <input type="text" id="cure04" name="cure04" placeholder="Enter cure details">
+                <button type="button" onclick="updateCure('cure04')">Update Cure</button>
+            </li>
+            
+        </ul>
+        <a href="user.html"><b>GO BACK</b></a>
+    </div>
+    <script>
+        function updateCure(patientId) {
+            var cureInput = document.getElementById(patientId);
+            var cureDetails = cureInput.value;
+            alert("Cure for " + patientId + " updated successfully.");
+        }
+    </script>
+</body>
+</html>

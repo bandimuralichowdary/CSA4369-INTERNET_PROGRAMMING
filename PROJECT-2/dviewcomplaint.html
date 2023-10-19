@@ -1,0 +1,83 @@
+<!-- PROJECT-2 MAIN submain-1 page-4-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor View Complaint</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(177, 250, 164);
+        }
+        div.doctorView {
+            width: 450px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        div.doctorView h2 {
+            margin-bottom: 20px;
+        }
+        div.doctorView ul {
+            padding: 0;
+            list-style: none;
+        }
+        div.doctorView li {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        div.doctorView li input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        div.doctorView button[type="button"] {
+            background-color: black;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        div.doctorView button[type="button"]:hover {
+            background-color: rgb(18, 1, 35);
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Doctor View Complaint Page -->
+    <div class="doctorView">
+        <h1>View Complaint</h1>
+        <ul>
+            <li>
+                <h3>Complaint Number 01</h3><br/>
+                <b>Complaint Text:</b> User 1 <a href="upostcomplaint.html">Complaint Status</a><br/><br/>
+                <button type="button" onclick="markResolved('c1')">Mark Resolved</button>
+            </li>
+            <li>
+                <h3>Complaint Number 02</h3>
+                <b>Complaint Text:</b> User 2 <a href="upostcomplaint.html">Complaint Status</a><br/><br/>
+                <button type="button" onclick="markResolved('c2')">Mark Resolved</button>
+            </li>
+            <li>
+                <h3>Complaint Number 03</h3>
+                <b>Complaint Text:</b> User 3 <a href="upostcomplaint.html">Complaint Status</a><br/><br/>
+                <button type="button" onclick="markResolved('c3')">Mark Resolved</button>
+            </li>
+        </ul>
+        <a href="user.html"><b>GO BACK</b></a>
+    </div>
+    <script>
+        function markResolved(complaintId) {
+            alert("Complaint " + complaintId + " marked as resolved.");
+        }
+    </script>
+</body>
+</html>
