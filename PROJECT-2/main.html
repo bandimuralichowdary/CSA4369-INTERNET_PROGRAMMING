@@ -1,0 +1,77 @@
+<!-- PROJECT-2 MAIN-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE VETERINARY CARE</title>
+    <style>
+        marquee{
+            color:rgb(27, 21, 37);
+            font-family: 'Lucida Sans', Arial, sans-serif;
+        }
+        body{
+            background-image: url("veterinary.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            text-align: center;
+        }
+        div.form button[type="button"]{
+            width: 100px;
+            height: 40px;
+            border-radius: 25px;
+            color:rgb(255, 238, 218);
+            background-color: black;
+            filter: drop-shadow(2px 1.5px 2px rgba(255, 255, 255, 0.299));
+        }
+        div.form button[name="user"]:hover{
+            filter: drop-shadow(1.5px 2px 2px rgba(255, 255, 255, 0.452));
+        }
+        div.form button[name="doctor"]:hover{
+            filter: drop-shadow(-1.5px 2px 2px rgba(255, 255, 255, 0.452));
+        }
+        img{
+            filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+        }
+        img:hover{
+            filter: drop-shadow(2px 2px 5px black);
+        }
+        h2{
+            text-align:center;
+            font-family: 'Rouge Script', sans-serif;
+            font-weight: bolder;
+            color: rgb(20, 19, 19);
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            display: inline-block;
+            letter-spacing: 0.07em;
+            border-radius: 35px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(47, 47, 47);
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <marquee scrollamount="20"><h1>WELCOME TO ONLINE VETERINARY CARE!!</h1></marquee><br/>
+    <center>
+        <a href="online_veterinary_care.html"><h2>SELECT YOUR CATEGORY</h2></a><br/>
+        <a href="online_veterinary_care.html"><img src="user.png" name="user" width="100" height="100"></a><br/><br/>
+        <div class="form">
+            <form name="myform" action="process_category.php">
+                <a href="user.html"><button type="button" name="user"><b>USER</b></button></a>&nbsp;&nbsp;&nbsp;
+                <a href="doctor.html"><button type="button" name="doctor"><b>DOCTOR</b></button></a>
+            </form><br/><br/>
+        </div>
+    </center>
+    <footer>
+        &copy; 2023 <a href="mylicense.html"><b>Bandi Murali Chowdary</b></a>&nbsp;All Rights Reserved.
+    </footer>
+</body>
+</html>
